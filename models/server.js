@@ -18,6 +18,9 @@ class Server {
     //configura el server
     this.io = socketio(this.server, {
       /*Confuguraciones* */
+      cors: {
+        origin: "*"
+      }
     });
   }
 
